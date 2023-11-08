@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刪除字元</title>
+</head>
+
+<body>
+    <h2>刪除Hello當中的l</h2>
+    <script>
+        let str = "Hello";
+        let del = "l";
+        let ans = "";
+        for (i = 0; i < str.length; i++) {
+            if (str[i] !== del) {
+                ans=ans+str[i];
+                document.write("印出過程:",ans,"<br>");
+            }
+        }
+        document.write("最終解答:",ans);
+    </script>
+</body>
+
+</html>
