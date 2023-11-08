@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字串轉大寫</title>
+</head>
+
+<body>
+    <h2>字串轉大寫</h2>
+    <script>
+        let word = "Kuoba";
+        let nweWord = "";
+        for (i = 0; i < word.length; i++) {
+            let code = word.charCodeAt(i);
+            if (code >= 97 && code <= 122) {
+                nweWord = nweWord + String.fromCharCode(code - 32);
+            } else {
+                nweWord = nweWord + word[i];
+            }
+        }
+        document.write(nweWord);
+    </script>
+
+    <h2>字串轉小寫</h2>
+    <script>
+        let word2 = "RUBy";
+        let nweWord2 = "";
+        for (i = 0; i < word2.length; i++) {
+            let code = word2.charCodeAt(i);
+            if (code >= 65 && code <= 90) {
+                nweWord2 = nweWord2 + String.fromCharCode(code + 32);
+            } else {
+                nweWord2 = nweWord2 + word2[i];
+            }
+        }
+        document.write(nweWord2);
+    </script>
+</body>
+
+</html>
