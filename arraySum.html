@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列總和</title>
+</head>
+<body>
+    <h2>陣列總和（反著加）</h2>
+    <script>
+        let arr=[10,20,30,40,50];
+        let sum=0;
+        for(i=arr.length-1;i>=0;i--){
+            sum=sum+arr[i];
+            document.write("加總過程:",sum,"<br>");
+        }
+        document.write("總和:",sum,"<br>");
+    </script>
+</body>
+</html>
