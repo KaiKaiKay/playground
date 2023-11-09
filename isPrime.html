@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質數判斷</title>
+</head>
+
+<body>
+    <h2>質數判斷 1~n</h2>
+    <script>
+        let n = 47;
+        for (let i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                document.write(i + " 是質數<br>");
+            } else {
+                document.write(i + " 不是質數<br>");
+            }
+        }
+
+        function isPrime(n) {
+            if (n === 1) return false;
+            for (let j = 2; j < n; j++) {
+                if (n % j === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <h2>質數判斷 陣列</h2>
+    <script>
+        let arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 20]
+        for (k = 0; k < arr.length; k++) {
+            let isPrime = true;
+            if (arr[k] === 1) {
+                isPrime = false
+            }
+            for (let j = 2; j < arr[k]; j++) {
+                if (arr[k] % j === 0) {
+                    isPrime = false;
+                    break
+                }
+            }
+            if (isPrime) {
+                document.write(arr[k] + " 是質數<br>");
+            } else {
+                document.write(arr[k] + " 不是質數<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
